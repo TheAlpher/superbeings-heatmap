@@ -15,7 +15,7 @@ export default {
       type: String,
       required: true,
     },
-    widthStyle: String,
+    widthStyle: Number,
   },
 
   computed: {
@@ -45,7 +45,7 @@ export default {
       return this.cellType == "colHead";
     },
     styleString() {
-      return `width: ${this.widthStyle}%`;
+      return `width: ${Number.parseInt(this.widthStyle)}%`;
     },
   },
   methods: {},
