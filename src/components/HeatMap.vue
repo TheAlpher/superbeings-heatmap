@@ -38,7 +38,6 @@ export default {
   computed: {
     ...mapGetters(["getIndexesArray", "getIndexTopics"]),
     indexTopicOptions() {
-      console.log(this.selectedIndex, this.getIndexTopics(this.selectedIndex));
       return this.getIndexTopics(this.selectedIndex);
     },
   },

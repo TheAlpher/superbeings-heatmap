@@ -20,7 +20,6 @@ export default {
 
   computed: {
     className() {
-      console.log(this.value, typeof this.value);
       let classStr = "cell";
       switch (this.cellType) {
         case "rowHead":
